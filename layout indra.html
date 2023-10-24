@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #c92609;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #c92609;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Muhamad Indra Ikmaludin</h2>
+</header>
+
+<section>
+ 
+  
+  <article>
+    <h1>artikel</h1>
+    <p>Masa depan adalah topik yang selalu menarik untuk dibahas, karena ia penuh dengan potensi, tantangan, dan perubahan yang tak terduga. Dalam artikel ini, kita akan menjelajahi beberapa aspek masa depan, termasuk perkembangan teknologi, tantangan sosial, dan peran individu dalam membentuk dunia yang akan datang.</p>
+    <p>asa depan didefinisikan oleh kemajuan teknologi. Setiap tahun, kita melihat terobosan baru dalam berbagai bidang, seperti kecerdasan buatan, bioteknologi, dan energi terbarukan. </p>
+  </article>
+</section>
+
+<footer>
+  <p>@endra_3396</p>
+</footer>
+
+</body>
+</html>
+
